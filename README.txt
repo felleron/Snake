@@ -1,0 +1,1 @@
+An independent reimplementation of the game of Snake using SDL library. :)
