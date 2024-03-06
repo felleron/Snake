@@ -262,8 +262,8 @@ void detect_crash()
 {
     if(head->x < 0 || head->x >= GRID_SIZE  || head->y < 0 || head->y >= GRID_SIZE )
     {
-        reset_snake();
         gen_apple();
+        reset_snake();
     }
 
     Snake *track = head;
@@ -274,8 +274,8 @@ void detect_crash()
     while(track != NULL) {
         if(track->x == head->x && track->y == head->y)
         {
-            reset_snake();
             gen_apple();
+            reset_snake();
         }
         track = track->next;
     }
